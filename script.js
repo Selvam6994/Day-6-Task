@@ -48,3 +48,23 @@ class Person{
 }
 var personDetails = new Person("SK","28","Male","80,000");
 console.log(personDetails);
+
+//Uber price.
+class Uber {
+    constructor(Kms,priceperKm){
+        this.Kms=Kms;
+        this.priceperKm=priceperKm;
+    }
+rideCost(){
+var costArr = [this.Kms,this.priceperKm];
+var price = 1;
+for(let i=0;i<costArr.length;i++){
+price= costArr[i]*price
+}
+return price;
+}
+
+}
+var rideDetails=new Uber(50,40);
+console.log(rideDetails)
+console.log(`Uber Price is Rs.${rideDetails.rideCost()}/-`);
