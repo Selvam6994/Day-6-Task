@@ -63,7 +63,6 @@ price= costArr[i]*price
 }
 return price;
 }
-
 }
 var rideDetails=new Uber(50,40);
 console.log(rideDetails)
